@@ -1,13 +1,13 @@
 {
     "builds": [{
-      "src": "doc_tracker/asgi.py",
+      "src": "doc_tracker/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.0" }
     }],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "doc_tracker/asgi.py"
+        "dest": "doc_tracker/wsgi.py"
       }
     ]
 }
