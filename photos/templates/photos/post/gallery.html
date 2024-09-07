@@ -1,0 +1,7 @@
+{% extends "photos/base.html" %}
+
+{% block content %}
+    {% for photo in photos %}
+        <img src="{{ photo.image.url }}" alt="Uploaded Photo" width="200">
+    {% endfor %}
+{% endblock content %}
